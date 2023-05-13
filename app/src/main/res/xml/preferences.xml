@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="Settings">
+    <CheckBoxPreference android:key="test_first" android:title="First test" android:defaultValue="true" />
+</PreferenceCategory>
+</PreferenceScreen>

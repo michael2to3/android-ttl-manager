@@ -7,22 +7,23 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.preference.PreferenceFragmentCompat;
+import com.github.ttl.manager.R;
 
 import com.github.ttl.manager.databinding.FragmentSettingsBinding;
 
-public class SettingsFragment extends Fragment {
+import java.util.prefs.Preferences;
+
+public class SettingsFragment extends PreferenceFragmentCompat {
 
     private FragmentSettingsBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-
-        binding = FragmentSettingsBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+    @Override
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        setPreferencesFromResource(R.xml.preferences, rootKey);
     }
 
     @Override
