@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ttl-manager</string>
+    <string name="app_name">TTL manager</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">TTL manager</string>
@@ -8,8 +8,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">TTL manager</string>
-    <string name="menu_gallery">Stat</string>
-    <string name="menu_slideshow">Settings</string>
+    <string name="menu_settings">Settings</string>
     <string name="input_ttl">TTL count</string>
     <string name="ttl_apply">Apply</string>
     <string name="ttl_restore">Restore</string>
