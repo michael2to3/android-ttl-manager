@@ -10,4 +10,7 @@
     <string name="menu_home">TTL manager</string>
     <string name="menu_gallery">Stat</string>
     <string name="menu_slideshow">Settings</string>
+    <string name="input_ttl">TTL count</string>
+    <string name="ttl_apply">Apply</string>
+    <string name="ttl_restore">Restore</string>
 </resources>
