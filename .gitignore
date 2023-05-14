@@ -46,4 +46,6 @@ google-services.json
 .externalNativeBuild
 .cxx
 local.properties
->>>>>>> master
+config.yml
+keystore.p12
+tmp
