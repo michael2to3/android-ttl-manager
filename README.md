@@ -32,9 +32,13 @@ git clone https://github.com/yourusername/Java-Android-TTL-Manager.git
 
 2. Allow the app to request root permissions.
 
-3. Configure the app settings according to your needs, such as editing the TTL value, enabling autostart, or bypassing VPN traffic blocking.
+3. Configure the app settings according to your needs, such as editing the TTL value, enabling autostart.
 
 4. Save the settings and enjoy the benefits of the Java Android TTL Manager app.
+
+https://github.com/michael2to3/android-ttl-manager/assets/87614587/e3da15bc-4bc8-420a-aec8-d7c369519519
+
+
 
 ## Disclaimer
 
