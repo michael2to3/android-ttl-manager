@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,19 +17,37 @@ import com.github.ttl.manager.databinding.FragmentHomeBinding;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
+    private HomeViewModel viewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        viewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         final TextView textView = binding.ttlShow;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        viewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
-        final TextView restore = binding.ttlRestore;
+        Button btnApply = binding.ttlApply;
+        Button btnRestore = binding.ttlRestore;
+
+        btnApply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditText editText = binding.ttlInput;
+                int ttl = Integer.parseInt(editText.getText().toString());
+                viewModel.onApply(ttl);
+            }
+        });
+
+        btnRestore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewModel.onRestore();
+            }
+        });
+
         return root;
     }
 
