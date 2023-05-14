@@ -19,7 +19,7 @@ Java Android TTL Manager is a powerful and easy-to-use Android app that allows u
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/Java-Android-TTL-Manager.git
+git clone git@github.com:michael2to3/android-ttl-manager.git
 ```
 
 2. Open the project in your preferred Android development environment (e.g., Android Studio).
