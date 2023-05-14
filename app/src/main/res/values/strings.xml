@@ -12,4 +12,5 @@
     <string name="input_ttl">TTL count</string>
     <string name="ttl_apply">Apply</string>
     <string name="ttl_restore">Restore</string>
+    <string name="ttl_default_show">Your TTL is undefined</string>
 </resources>

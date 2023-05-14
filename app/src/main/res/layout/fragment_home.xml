@@ -7,36 +7,59 @@
     tools:context=".ui.home.HomeFragment">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTextNumber2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/input_ttl"
-            android:inputType="number" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/ttl_apply"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:text="@string/ttl_apply" />
+            <EditText
+                android:id="@+id/ttl_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/input_ttl"
+                android:importantForAutofill="no"
+                android:inputType="number" />
 
-        <Button
-            android:id="@+id/ttl_restore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ttl_restore" />
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/ttl_apply"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:text="@string/ttl_apply" />
+
+                <Button
+                    android:id="@+id/ttl_restore"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ttl_restore" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ttl_show"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginHorizontal="3dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/ttl_default_show" />
 
     </LinearLayout>
 

@@ -10,7 +10,7 @@ public class HomeViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public HomeViewModel() throws Exception{
         mText = new MutableLiveData<>();
         mText.setValue("Your current TTL is " + new TTLModifier().getTTL());
     }
