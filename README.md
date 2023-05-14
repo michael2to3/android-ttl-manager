@@ -1,4 +1,6 @@
 # Java Android TTL Manager
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/640ef989712344a58771871c26fabd99)](https://app.codacy.com/gh/michael2to3/android-ttl-manager/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+[![F-Droid](https://img.shields.io/badge/F--Droid-download-blue)](https://f-droid.org/packages/your.app.package.name/)
 
 Java Android TTL Manager is a powerful and easy-to-use Android app that allows users to edit TTL values, autostart changes, bypass VPN traffic blocking, and avoid additional costs when distributing Wi-Fi. 
 
