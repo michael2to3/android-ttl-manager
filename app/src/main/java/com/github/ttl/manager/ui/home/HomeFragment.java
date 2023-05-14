@@ -22,7 +22,13 @@ public class HomeFragment extends Fragment {
                 new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        View root = binding.getRoot();
+
+        final TextView textView = binding.ttlShow;
+        homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        final TextView restore = binding.ttlRestore;
+        return root;
     }
 
     @Override
