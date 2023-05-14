@@ -1,5 +1,8 @@
 package com.github.ttl.manager.actions;
 
+import com.github.ttl.manager.exceptions.RootAccessException;
+import com.github.ttl.manager.exceptions.TTLOperationException;
+import com.github.ttl.manager.exceptions.TTLValueException;
 import com.github.ttl.manager.interfaces.ITTLModifier;
 
 import java.io.BufferedReader;
@@ -9,7 +12,7 @@ import java.io.InputStreamReader;
 
 public class TTLModifier implements ITTLModifier {
 
-    public int getTTL() throws TTLValueException, RootAccessException {
+    public int getTTL() throws RootAccessException, TTLValueException, TTLOperationException {
         Process process = null;
         BufferedReader bufferedReader = null;
 
@@ -37,7 +40,7 @@ public class TTLModifier implements ITTLModifier {
                 try {
                     bufferedReader.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    throw new TTLOperationException("Operation interrupted", e);
                 }
             }
             if (process != null) {
@@ -46,7 +49,7 @@ public class TTLModifier implements ITTLModifier {
         }
     }
 
-    public void setTTL(int ttl) throws TTLValueException, RootAccessException {
+    public void setTTL(int ttl) throws RootAccessException, TTLValueException, TTLOperationException {
         Process process = null;
 
         try {
@@ -66,6 +69,8 @@ public class TTLModifier implements ITTLModifier {
             }
         } catch (IOException e) {
             throw new RootAccessException("Root access not granted or not available", e);
+        } catch (InterruptedException e) {
+            throw new TTLOperationException("Operation interrupted", e);
         } finally {
             if (process != null) {
                 process.destroy();

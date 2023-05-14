@@ -1,6 +1,7 @@
 package com.github.ttl.manager.interfaces;
 
 import com.github.ttl.manager.exceptions.RootAccessException;
+import com.github.ttl.manager.exceptions.TTLOperationException;
 import com.github.ttl.manager.exceptions.TTLValueException;
 
 public interface ITTLModifier {
@@ -11,7 +12,7 @@ public interface ITTLModifier {
      * @throws RootAccessException if root access is not granted or not available.
      * @throws TTLValueException if the TTL value cannot be retrieved.
      */
-    int getTTL() throws RootAccessException, TTLValueException;
+    int getTTL() throws RootAccessException, TTLValueException, TTLOperationException;
 
     /**
      * Set a new Time To Live (TTL) value.
@@ -20,5 +21,5 @@ public interface ITTLModifier {
      * @throws RootAccessException if root access is not granted or not available.
      * @throws TTLValueException if the TTL value cannot be set or not changed.
      */
-    void setTTL(int ttl) throws RootAccessException, TTLValueException;
+    void setTTL(int ttl) throws RootAccessException, TTLValueException, TTLOperationException;
 }
