@@ -1,5 +1,7 @@
 package com.github.ttl.manager.ui.home;
 
+import android.widget.Toast;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -18,11 +20,11 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Your current TTL is undefined");
         try {
             mText.setValue("Your current TTL is " + new TTLModifier().getTTL());
         } catch(RootAccessException | TTLOperationException | TTLValueException e) {
             LOGGER.log(Level.SEVERE, "Home view model cannot get TTL", e);
+            mText.setValue("An error occurred while receiving TTL:" + e.getMessage());
         }
     }
 
