@@ -1,0 +1,15 @@
+Java Android TTL Manager is a user-friendly app that enables users to modify TTL values on rooted Android devices. The app allows autostart changes, bypasses VPN traffic blocking, and prevents additional charges when sharing Wi-Fi.
+
+Key features:
+- Edit TTL values
+- Autostart TTL changes
+- Bypass VPN traffic blocking
+- Avoid extra costs when sharing Wi-Fi
+
+Requirements:
+- Minimum SDK: 28
+- Root access needed
+
+Please note that this app requires root access. Rooting your device may void its warranty and expose it to potential security risks. Use this app at your own risk and ensure you follow all applicable laws and regulations.
+
+For installation instructions, usage, and support, please visit the GitHub repository: https://github.com/michael2to3/android-ttl-manager
