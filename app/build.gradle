@@ -10,8 +10,8 @@ android {
         applicationId "com.github.ttl.manager"
         minSdk 28
         targetSdk 33
-        versionCode 1
-        versionName "0.0.12"
+        versionCode 13
+        versionName "0.0.13"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
