@@ -4,6 +4,12 @@
 
 Java Android TTL Manager is a powerful and easy-to-use Android app that allows users to edit TTL values, autostart changes, bypass VPN traffic blocking, and avoid additional costs when distributing Wi-Fi. 
 
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
+     alt="Get it on F-Droid"
+     height="80">](https://f-droid.org/packages/com.github.ttl.manager/)
+
+Or download the latest APK from the [Releases Section](https://github.com/michael2to3/android-ttl-manager/releases/latest).
+
 ## Features
 
 * Edit TTL values
@@ -19,23 +25,17 @@ Java Android TTL Manager is a powerful and easy-to-use Android app that allows u
 ## Installation
 
 1. Clone the repository:
-
 ```bash
 git clone git@github.com:michael2to3/android-ttl-manager.git
 ```
-
 2. Open the project in your preferred Android development environment (e.g., Android Studio).
-
 3. Build and install the app on a rooted device with the required minimum SDK.
 
 ## Usage
 
 1. Open the Java Android TTL Manager app on your rooted device.
-
 2. Allow the app to request root permissions.
-
 3. Configure the app settings according to your needs, such as editing the TTL value, enabling autostart.
-
 4. Save the settings and enjoy the benefits of the Java Android TTL Manager app.
 
 https://github.com/michael2to3/android-ttl-manager/assets/87614587/e3da15bc-4bc8-420a-aec8-d7c369519519
@@ -45,6 +45,10 @@ https://github.com/michael2to3/android-ttl-manager/assets/87614587/e3da15bc-4bc8
 ## Disclaimer
 
 This app requires root access to function properly. Rooting your device may void its warranty and expose your device to potential security risks. Use this app at your own risk, and always make sure to follow applicable laws and regulations.
+
+## Alternatives
+- [TTL Editor](https://f-droid.org/packages/org.segin.ttleditor/) - TTL Editor is a simple graphical frontend for iptables to change the TTL (time-to-live) of packets sent over a given network interface. It is available on F-Droid, which is a free and open-source Android app repository.
+- That's it ;)  If you know of other open source alternatives, then write or do pr
 
 ## License
 
